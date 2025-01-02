@@ -1,0 +1,16 @@
+# PHP version
+php>=7.4
+
+# Database
+mysql-server
+
+# PHP Extensions
+php-mysqli
+php-pdo
+php-mbstring
+php-curl
+php-gd
+php-xml
+
+# Web Server
+apache2
