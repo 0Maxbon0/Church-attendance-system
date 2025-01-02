@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://kit.fontawesome.com/aa27b35762.js" crossorigin="anonymous"></script>
+    <title>St.Mary website</title>
+  <head>
+    
+    <link rel="stylesheet" href="AboutUs.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <script>
+      fetch("header.php")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("header").innerHTML = html;
+        });
+    </script>
+    <section class="background" id="about">
+    <section>
+      <div class="about-container">
+        <!-- <div class="video-container">
+          <video src="" width="640" height="360" controls></video>
+        </div>
+        <div class="audio-c">
+          <audio src="" type="audio/mpeg" controls></audio>
+        </div> -->
+        <div class="desc-container">
+          <h2 style="font-size: 30px;">
+            Welcome to St.Mary's Church's Website!
+          </h2>
+               <p style="font-size: 16px; ">This site is where you can see
+              where and when our events will be. You can also check for the
+              scheduled times for our sunday schools.</p>
+        </div>
+        <div class="img-container">
+            <img src="st.maryholdingjesus.jpg" usemap="#image-map">
+            
+            <map name="image-map">
+                <area target="_blank" alt="Virgin Mary" title="Virgin Mary" href="https://en.wikipedia.org/wiki/Mary,_mother_of_Jesus" coords="270,150,114" shape="circle">
+                <area target="_blank" alt="Baby Jesus" title="Baby Jesus" href="https://en.wikipedia.org/wiki/Jesus" coords="400,350,108" shape="circle">
+            </map></div>
+      </div>
+    </section>
+  </section>
+    <div id="footer"></div>
+    <script>
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("footer").innerHTML = html;
+        });
+    </script>
+  </body>
+</html>

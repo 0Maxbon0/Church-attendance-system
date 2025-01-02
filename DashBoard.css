@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.table-container {
+  max-height: 400px;
+  overflow-y: auto;
+  position: relative;
+  transform: translateY(110px);
+  width: 90%;
+  margin-bottom: 30px;
+  height: 60%;
+  -webkit-transform: translateY(110px);
+  -moz-transform: translateY(110px);
+  -ms-transform: translateY(110px);
+  -o-transform: translateY(110px);
+}
+.styled-table {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: "Poppins", sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+  background-color: rgba(83, 148, 190, 1);
+  color: #ffffff;
+  text-align: left;
+}
+.styled-table thead th {
+  background-color: rgba(83, 148, 190, 1);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.styled-table th,
+.styled-table td {
+  white-space: nowrap;
+  text-align: center;
+  padding: 12px 15px;
+  width: 25%;
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+.styled-table tbody tr {
+  background-color: white;
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 5px solid rgba(83, 148, 190, 1);
+}
+.table-section {
+  background-image: url("login-background.jpg");
+  height: 100vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input[type="text"] {
+  border-radius: 0px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  padding: 5px;
+}
+input[type="text"]:focus {
+  border-radius: 10px;
+  transition: all 0.25s ease-in-out;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+button[type="button"] {
+  border-radius: 10px;
+  padding: 5px;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.scanner-btn{
+  transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+}
+button[type="button"]:hover {
+  cursor: pointer;
+  transition: all 0.22s ease-in-out;
+  background-color: rgba(83, 148, 190, 1);
+  color: white;
+  -webkit-transition: all 0.22s ease-in-out;
+  -moz-transition: all 0.22s ease-in-out;
+  -ms-transition: all 0.22s ease-in-out;
+  -o-transition: all 0.22s ease-in-out;
+}
+.id-label {
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+}
+.form-container {
+  background-color: rgba(83, 148, 190, 0.82);
+  padding: 10px;
+  border-radius: 10px;
+  transform: translateY(70px) translateX(-430px);
+  -webkit-transform: translateY(70px) translateX(-430px);
+  -moz-transform: translateY(70px) translateX(-430px);
+  -ms-transform: translateY(70px) translateX(-430px);
+  -o-transform: translateY(70px) translateX(-430px);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}

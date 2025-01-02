@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="login.css" />
+    <script
+      src="https://kit.fontawesome.com/aa27b35762.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>St.Mary website</title>
+  </head>
+  <body>
+    <div id="header"></div>
+    <script>
+      fetch("header.php")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("header").innerHTML = html;
+        });
+    </script>
+
+    <div class="background" id="login">
+      <div class="wrapper">
+        <form action="login_connection.php" method="post">
+          <!-- Modified action to point to login.php for server-side processing -->
+          <h1>Login</h1>
+          <div class="input-box">
+            <input
+              type="text"
+              placeholder="Username"
+              name="username"
+              required
+            />
+            <!-- Changed name attribute to match PHP variable -->
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="input-box">
+            <input
+              type="password"
+              placeholder="Password"
+              name="password"
+              required
+            />
+            <!-- Changed name attribute to match PHP variable -->
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <input type="submit" class="btn" value="Login" />
+        </form>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+    <script>
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("footer").innerHTML = html;
+        });
+    </script>
+  </body>
+</html>

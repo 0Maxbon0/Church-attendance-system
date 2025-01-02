@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+*{
+  font-family: 'Poppins' ,sans-serif;
+}
+html,
+body{
+  scroll-behavior: smooth;
+}
+.title-and-button {
+  transform: translateY(-13px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+  /*Adjustasneeded*/-webkit-transform: translateY(-15px);
+  -moz-transform: translateY(-13px);
+  -ms-transform: translateY(-13px);
+  -o-transform: translateY(-13px);
+  -webkit-transform: translateY(-13px);
+}
+.HomePage_Content {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 5;
+}
+.homePage-title {
+  font-size: 40px;
+  color: rgb(235, 200, 3);
+  background-blend-mode: color-burn;
+}
+.stripes ul a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(253, 249, 249);
+  padding: 25px 5px;
+}
+
+#checkbox {
+  display: none;
+}
+
+label #menu,
+label #x-square {
+  position: absolute;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+label #menu {
+  left: 40px;
+  top: 25px;
+  font-size: 35px;
+  height: 50px;
+  width: 50px;
+  transition: all 0.5s;
+}
+label #x-square {
+  z-index: 1111;
+  left: -195px;
+  top: 7px;
+  font-size: 50px;
+  height: 50px;
+  width: 50px;
+  transition: all 0.5s ease;
+}
+#checkbox:checked ~ .stripes {
+  left: 0;
+}
+#checkbox:checked ~ label #menu {
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#checkbox:checked ~ label #x-square {
+  position: fixed;
+  left: 195px;
+}
+.stripes ul a:hover {
+  color: rgb(6, 5, 5);
+  background-color: white;
+}
+.stripes {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  background-color: rgba(83, 147, 190, 0.955);
+  width: 250px;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+.stripes .font-style {
+  margin-top: 100px;
+  font-size: 19px;
+}
+.logout {
+   background:url('https://dh3vbjnk0bnfa.cloudfront.net/static/centralauth/images/btn-login-hover.png') no-repeat 5px 5px #28282B;
+    
+   width: 100px;
+   cursor:pointer;
+   border-radius:50px;
+   padding:10px 20px 10px 0;
+   color:White;
+   font-size:14px;
+   text-align:left;
+   text-indent:40px;
+   display:block;
+   transform: translateX(500px);
+   margin:0 auto;
+   /*Animations:;
+   */-webkit-transition-timing-function: ease-in-out;
+   -webkit-transition-duration: .4s;
+   -webkit-transition-property: all;
+   -moz-transition-timing-function: ease-in-out;
+   -moz-transition-duration: .4s;
+   -moz-transition-property: all;
+   -webkit-transform: translateX(500px);
+   -moz-transform: translateX(500px);
+   -ms-transform: translateX(500px);
+   -o-transform: translateX(500px);
+}
+ 
+ .logout:hover {
+   background-image: url( 'https://dh3vbjnk0bnfa.cloudfront.net/static/centralauth/images/btn-login.png' );
+   background-position: 65px 5px;
+   text-indent: 15px;  
+ }
+ .logged-in {
+  transform: translateX(50px);
+}

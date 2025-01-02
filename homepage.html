@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <link rel="stylesheet" href="/Web Project/homepage.css" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+  </style>
+  <head>
+    <title>St.Mary website</title>
+    
+    
+    <script src="https://kit.fontawesome.com/aa27b35762.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header"></div>
+<script>
+    fetch('header.php')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('header').innerHTML = html;
+        });
+</script>
+    <div class="MiddlePage_Content" id="HomePage">
+      <!-- <div class="iframe"><iframe src="https://www.wikipedia.org" width="600" height="400" frameborder="0"></iframe></div> -->
+      <h1 class="MiddlePage-title">Welcome to St. Mary's website</h1>
+    </div>
+    <section class="background"></section>
+    <div id="footer"></div>
+<script>
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('footer').innerHTML = html;
+        });
+</script>
+  </body>
+</html>
